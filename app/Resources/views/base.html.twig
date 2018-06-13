@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+    <ul>
+        <li> <a href="/">Index</a></li>
+        <li> <a href="/contact">Contact list</a> </li>
+        <li> <a href="/contact/new">Nous contacter</a> </li>
+        <li> <a href="/register">Register</a> </li>
+        <li> <a href="/login">Login</a> </li>
+
+    </ul>
+        {% block body %}{% endblock %}
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>
